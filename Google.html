@@ -4,6 +4,14 @@
   <head>
     <meta charset="utf-8" />
     <style>
+        #nine-square {
+  background-image: url("https://ssl.gstatic.com/gb/images/i1_1967ca6a.png");
+  background-position: -132px -38px;
+  background-size: 528px 68px;
+  opacity: 0.55;
+  height: 30px;
+  width: 30px;
+}
       h1,
       h2 {
         color: #248aec;
@@ -16,49 +24,31 @@
         margin: 0 auto;
       }
       .container {
-        height: 325px;
-        width: 400px;
-        background: greenyellow;
-        margin: auto;
-      }
-      .topContainer {
-        height: 200px;
-        width: 400px;
-        background: rgb(36, 231, 179);
-      }
-      .midContainer {
-        height: 25px;
-        width: 400px;
+        height: 350px;
+        width: 600px;
         background: white;
-      }
-      .botContainer {
-        height: 100px;
-        width: 400px;
-        background: rgb(36, 231, 179);
-      }
-      .topRightContainer {
-        float: right;
-        margin-right: 25px;
-        margin-top: 25px;
-        width: 100px;
-        height: 50px;
-        background: #e0f310;
-      }
-      .botLeftContainer,
-      .botMidContainer,
-      .botRightContainer {
-        width: 100px;
-        height: 50px;
-        background: #e0f310;
+        border: 3px solid gray;
+        margin: auto;
       }
 
-      #grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        /* margin : 0px 25px 10px 25px; */
-        margin: auto;
-        padding-left: 25px;
-        padding-top: 25px;
+      .bot {
+        height: 40px;
+        border-bottom: 1px solid #efefef;
+        border-top: 1px solid #efefef;       
+      }
+      .liLeft {
+        list-style: none;
+        float: left;
+        width: 80px;
+        line-height: 20px; /* 텍스트를 상하로 가운데 정렬하는 속성 */
+        text-align: center;
+      }
+      .liRight {
+        list-style: none;
+        float: right;
+        width: 80px;
+        line-height: 20px; /* 텍스트를 상하로 가운데 정렬하는 속성 */
+        text-align: center;
       }
     </style>
   </head>
@@ -74,7 +64,23 @@
     </figure>
     <h2>My work!</h2>
     <div class="container">
-      
+        <div>
+            <ul>
+                <li>Gmail</li>
+                <li>이미지</li>
+                <li id="nine-square"></li>
+            </ul>
+        </div>
+      <div class="lastContainer">
+        <ul class="bot">
+          <li class="liLeft"><span>광고</span></li>
+          <li class="liLeft"><span>비즈니스</span></li>
+          <li class="liLeft"><span>Google 정보</span></li>
+          <li class="liRight"><span>설정</span></li>
+          <li class="liRight"><span>약관</span></li>
+          <li class="liRight"><span>개인정보처리망침</span></li>
+        </ul>
+      </div>
     </div>
   </body>
 
