@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      h1 {
+        color: #248aec;
+        font-size: 40px;
+        text-align: center;
+      }
+
+      img {
+        display: block;
+        width: 500px;
+        margin: 0 auto;
+      }
+
+      footer {
+        text-align: center;
+      }
+      .firstcontainer{
+          padding: 20px;
+      }
+      .maincontainer{
+        background: blueviolet;
+        width:400px;
+        height: 200px;
+        
+        text-align: center;
+        
+        margin: auto;
+      }
+      .leftcontainer{
+          width: 150px;
+          height: 100px;
+          background: yellowgreen;
+      }
+      .rightcontainer{
+          width: 150px;
+          height: 100px;
+          background: yellowgreen;
+      }
+      .midcontainer{
+        width: 50px;
+        height: 100px;
+        background: rosybrown;
+      }
+      #grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin : 0px 25px 10px 25px;
+        
+      }
+
+      /* 아래에 관련 CSS도 작성해주세요. */
+    </style>
+  </head>
+  <body>
+    <h1>Horizontal Alignment</h1>
+    <figure>
+      <img
+        src="https://s3.ap-northeast-2.amazonaws.com/prep-guide/challenge_1.png"
+        alt="바닐라코딩 challenge 1"
+      />
+    </figure>
+    <div class="container">
+      <!-- 이곳에 작업하시면 됩니다. 다른 HTML 부분은 수정하지 마세요. -->
+      <div  class="maincontainer">
+          <div class="firstcontainer">
+          <span style="font-size: 25px;">VANILLA CODING</span>
+          </div>
+          <div id="grid">
+            <div class="leftcontainer">
+                 left box
+            </div>
+            <div class="midcontainer">
+                 m
+            </div>
+            <div class="rightcontainer">
+                right box
+            </div>
+          </div>
+       </div>
+    </div>
+
+    <footer>
+      - 끝 -
+    </footer>
+  </body>
+</html>
