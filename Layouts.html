@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      h1,h2 {
+        color: #248aec;
+        font-size: 40px;
+        text-align: center;
+      }
+      img {
+        display: block;
+        width: 500px;
+        margin: 0 auto;
+      }
+      .container {
+        height: 325px;
+        width: 400px;
+        background: greenyellow;
+        margin: auto;
+      }
+      .topContainer {
+        height: 200px;
+        width: 400px;
+        background: rgb(36, 231, 179);
+      }
+      .midContainer {
+        height: 25px;
+        width: 400px;
+        background: white;
+      }
+      .botContainer {
+        height: 100px;
+        width: 400px;
+        background: rgb(36, 231, 179);
+      }
+      .topRightContainer {
+        float: right;
+        margin-right: 25px;
+        margin-top: 25px;
+        width: 100px;
+        height: 50px;
+        background: #e0f310;
+      }
+      .botLeftContainer,.botMidContainer,.botRightContainer {
+        width: 100px;
+        height: 50px;
+        background: #e0f310;
+      }
+     
+      #grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* margin : 0px 25px 10px 25px; */
+        margin: auto;
+        padding-left: 25px;
+        padding-top: 25px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Layouts</h1>
+    <figure>
+      <img
+        src="https://s3.ap-northeast-2.amazonaws.com/prep-guide/challenge_2.png"
+        alt="바닐라코딩 challenge 2"
+      />
+    </figure>
+    <h2>My work!</h2>
+    <div class="container">
+      <div class="topContainer">
+        <div class="topRightContainer"></div>
+      </div>
+      <div class="midContainer"></div>
+      <div class="botContainer">
+        <div id="grid">
+          <div class="botLeftContainer"></div>
+          <div class="botMidContainer"></div>
+          <div class="botRightContainer"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <footer
+    style="margin:auto; margin-top:30px;margin-bottom:30px;text-align: center;"
+  >
+    <span> 끝!</span>
+  </footer>
+</html>
