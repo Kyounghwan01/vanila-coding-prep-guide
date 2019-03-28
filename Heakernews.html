@@ -7,70 +7,216 @@
     <style>
       .header {
         background: rgb(252, 100, 6);
-        width: 1050px;
+        width: 2500px;
         height: 50px;
-        /* height: 20px; */
-        margin: auto;
-      }
-      .headContainer{
-        
+        margin: 0 auto;
       }
       .logo {
         width: 40px;
         margin: 5px;
         float: left;
       }
-      .title{
-          font-weight: bold;
-          font-size: 25px;
-          padding-left: 10px;
-          line-height: 50px; 
-          /* width와 똑같은 사이즈 맞추면 됨 */
+      .title {
+        font-weight: bold;
+        font-size: 25px;
+        padding-left: 10px;
+        line-height: 50px;
+        /* width와 똑같은 사이즈 맞추면 됨 */
       }
       .headTitle {
-   
+        padding: 0px;
+        margin: 0px;
       }
       .headTitle li {
         list-style: none;
         display: inline-block;
       }
-      .headSelect{
+      .headSelect {
         border-right: 1px solid black;
         padding-right: 10px;
         padding-left: 8px;
         font-size: 20px;
       }
-
       .headTitle li a {
         text-decoration: none;
         color: black;
-    
+      }
+      .bodyContainer {
+        background: rgb(244, 243, 234);
+        width: 2500px;
+        height: 800px;
+        margin: 0 auto;
+      }
+      .bodyContainer ol {
+        margin: 0px;
+      }
+      .line {
+        width: 2500px;
+        height: 3px;
+        background: rgb(252, 100, 6);
+        margin: auto;
+      }
+      .footer {
+        background: rgb(244, 243, 234);
+        width: 2500px;
+        height: 130px;
+        margin: auto;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        text-align: center;
+      }
+      .footer ul li {
+        display: inline-block;
+      }
+      .footer ul li a {
+        text-decoration: none;
+        color: black;
+      }
+      .footerSytle {
+        border-right: 1px solid gray;
+        padding-right: 10px;
+        padding-left: 8px;
+        font-size: 20px;
+      }
+      .footerSearch {
+        font-size: 30px;
+        color: gray;
+      }
+      .footerSearchText{
+        position: relative; 
+        bottom: -6px;
+      }
+      .footerSearchStyle{
+        width: 300px; 
+        height: 30px; 
+        position: relative;
+      }
+      ol li{
+        padding: 5px;
       }
     </style>
-
-    <div class="header">
-      <div class="headContainer">
-        <img class="logo" src="../assets/y.png" alt="logo" />
-        <ul class="headTitle">
-          <li><a href="#" class="title">Hacker News</a></li>
-          <li class="headSelect"><a href="#">news</a></li>
-          <li class="headSelect"><a href="#">past</a></li>
-          <li class="headSelect"><a href="#">comments</a></li>
-          <li class="headSelect"><a href="#">ask</a></li>
-          <li class="headSelect"><a href="#">show</a></li>
-          <li class="headSelect"><a href="#">jobs</a></li>
-          <li class="headSelect"><a href="#">submit</a></li>
-          <li style="float: right;padding-right: 10px;font-size: 20px; line-height: 50px;"><a href="#">login</a></li>
-        </ul>
-      </div>
-    </div>
     <div style="margin: auto;">
       <!-- <img src="../assets/heaker.png" style="width: 1000px; " alt="" /> -->
     </div>
   </head>
   <body>
     <div>
-      
+      <div class="header">
+        <div>
+          <img class="logo" src="../assets/y.png" alt="logo" />
+          <ul class="headTitle">
+            <li><a href="#" class="title">Hacker News</a></li>
+            <li class="headSelect"><a href="#">news</a></li>
+            <li class="headSelect"><a href="#">past</a></li>
+            <li class="headSelect"><a href="#">comments</a></li>
+            <li class="headSelect"><a href="#">ask</a></li>
+            <li class="headSelect"><a href="#">show</a></li>
+            <li class="headSelect"><a href="#">jobs</a></li>
+            <li class="headSelect"><a href="#">submit</a></li>
+            <li
+              style="float: right;padding-right: 10px;font-size: 20px; line-height: 50px;"
+            >
+              <a href="#">login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bodyContainer">
+        <ol>
+          <li style="padding-top:20px"><img class="tri" 
+            src="../assets/triangle.png" alt="tri" style="width: 17px;vertical-align: sub;"/>
+            Stoicism's Appeal to the Rich and Powerful (exurbe.com)<br>
+            <span style="margin-left: 21px;">24 points by fanf2 1 hour ago | hide | 2 comments</span>
+          </li>
+
+          <li><img class="tri" 
+            src="../assets/triangle.png" alt="tri" style="width: 17px;vertical-align: sub;"/>
+            Software Won’t Fix Boeing’s ‘Faulty’ Airframe (eetimes.com) <br>
+            <span style="margin-left: 21px;">	194 points by farseer 4 hours ago | hide | 164 comments</span>
+          </li>
+
+          <li><img class="tri" 
+            src="../assets/triangle.png" alt="tri" style="width: 17px;vertical-align: sub;"/>
+            Cisco Fixes RV320/RV325 Vulnerability by Banning “curl” in User-Agent (twitter.com) <br>
+            <span style="margin-left: 21px;">		449 points by pjf 11 hours ago | hide | 172 comments</span>
+          </li>
+
+          <li><img class="tri" 
+            src="../assets/triangle.png" alt="tri" style="width: 17px;vertical-align: sub;"/>
+            YC Interviews in India (ycombinator.com) <br>
+            <span style="margin-left: 21px;">		158 points by katm 6 hours ago | hide | 51 comments</span>
+          </li>
+
+          <li><img class="tri" 
+            src="../assets/triangle.png" alt="tri" style="width: 17px;vertical-align: sub;"/>
+            I Built a Lisp Compiler (timmorgan.org) <br>
+            <span style="margin-left: 21px;">		203 points by kristianp 8 hours ago | hide | 18 comments</span>
+          </li>
+
+          <li><img class="tri" 
+            src="../assets/triangle.png" alt="tri" style="width: 17px;vertical-align: sub;"/>
+            Microsoft says encryption laws make companies wary of storing data in Australia (abc.net.au) <br>
+            <span style="margin-left: 21px;">		450 points by technion 13 hours ago | hide | 193 comments</span>
+          </li>
+
+          <li><img class="tri" 
+            src="../assets/triangle.png" alt="tri" style="width: 17px;vertical-align: sub;"/>
+            Mistakes, we’ve drawn a few (economist.com) <br>
+            <span style="margin-left: 21px;">	173 points by tysone 7 hours ago | hide | 25 comments</span>
+          </li>
+
+          <li><img class="tri" 
+            src="../assets/triangle.png" alt="tri" style="width: 17px;vertical-align: sub;"/>
+            $50M CTF from Hackerone – Writeup (github.com) <br>
+            <span style="margin-left: 21px;">35 points by lelf 3 hours ago | hide | 7 comments</span>
+          </li>
+
+          <li><img class="tri" 
+            src="../assets/triangle.png" alt="tri" style="width: 17px;vertical-align: sub;"/>
+            UC Browser for Android, Desktop Exposes 500M Users to MiTM Attacks (bleepingcomputer.com) <br>
+            <span style="margin-left: 21px;">	49 points by cpeterso 5 hours ago | hide | 19 comments</span>
+          </li>
+
+          <li><img class="tri" 
+            src="../assets/triangle.png" alt="tri" style="width: 17px;vertical-align: sub;"/>
+            Learning Ada (steveklabnik.com) <br>
+            <span style="margin-left: 21px;">		32 points by weinzierl 3 hours ago | hide | 6 comments</span>
+          </li>
+
+          <li><img class="tri" 
+            src="../assets/triangle.png" alt="tri" style="width: 17px;vertical-align: sub;"/>
+            Developing for Android is like being a demonetized YouTuber (gbl08ma.com) <br>
+            <span style="margin-left: 21px;">	133 points by gbl08ma 9 hours ago | hide | 33 comments</span>
+          </li>
+            
+        </ol>
+        
+      </div>
+      <div class="line">
+          <div style="position: relative; top:-40px;left:77px;">
+              <span style="font-size:30px;">More</span>
+            </div>
+      </div>
+      <div class="footer">
+        <ul>
+          <li class="footerSytle"><a href="#">Guideline</a></li>
+          <li class="footerSytle"><a href="#">FAQ</a></li>
+          <li class="footerSytle"><a href="#">Support</a></li>
+          <li class="footerSytle"><a href="#">API</a></li>
+          <li class="footerSytle"><a href="#">Security</a></li>
+          <li class="footerSytle"><a href="#">Lists</a></li>
+          <li class="footerSytle"><a href="#">Bookmarklet</a></li>
+          <li class="footerSytle"><a href="#">Legal</a></li>
+          <li class="footerSytle"><a href="#">Apply to YC</a></li>
+          <li style="font-size: 20px;padding-left: 8px; color: gray;">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+        <div class="footerSearch">
+          <span class="footerSearchText">Search : </span>
+          <input type="text" class="footerSearchStyle"/>
+        </div>
+      </div>
     </div>
   </body>
 </html>
