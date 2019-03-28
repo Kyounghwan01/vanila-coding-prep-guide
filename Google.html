@@ -16,14 +16,16 @@
         width: 100%;
       }
       .searchConatiner {
+        position: relative;
         width: 288px;
         margin: auto;
       }
       .logo .search {
         width: 280px;
         height: 20px;
+        border: 23px;
         border-radius: 10px;
-        box-shadow: 0px 1px 1px #b8b8b8;
+        box-shadow: 0px 0px 0px 1px #e4e4e4;
       }
       #microphone {
         width: 20px;
@@ -38,7 +40,7 @@
         top: -31px;
       }
       .logo img {
-        width: 150px;
+        width: 130px;
       }
       img {
         display: block;
@@ -61,9 +63,9 @@
         width: 30px;
       }
       #circle-bell {
-        width: 30px;
-        height: 30px;
-        background-image: url("https://cdn-img-3.wanelo.com/p/770/842/3b5/50160de6ec9a55381fcf492/x354-q80.jpg");
+        width: 20px;
+        height: 20px;
+        background-image: url("data:image/png;base64,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");
         background-size: 30px 32px;
         border-radius: 80%;
       }
@@ -88,25 +90,67 @@
         vertical-align: middle;
       }
       .btnContainer {
+        position: relative;
+        bottom: 10px;
         margin: auto;
-        width: 190px;
+        width: 125px;
       }
       .btnContainer .btn {
         background: #f2f2f2;
         border: 0px;
-        height: 30px;
+        height: 20px;
         border-radius: 5%;
         float: left;
+        font-size: 6px;
       }
       .btnContainer .btn1 {
         background: #f2f2f2;
         border: 0px;
-        height: 30px;
+        height: 20px;
         border-radius: 5%;
         float: right;
+        font-size: 6px;
       }
+      .footer {
+        position: relative;
+        top: 113px;
+        left: 0;
+        width: 100%;
+        height: 40px;
+        background: #f2f2f2;
+        border-top: 1px solid #e4e4e4;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        vertical-align: center;
+      }
+      .lowLeftFooter {
+        padding: 0px;
+        margin: 0px 0px 0px 0px;;
+
+      }
+      .lowRightFooter {
+        float: right;
+        padding: 0px;
+        margin: 0px 0px 0px 0px;
+        text-align: right;
+      }
+
       input {
         border: 1px solid #b8b8b8;
+      }
+      ul li {
+        display: inline-block;
+        padding-top: 0px;
+      }
+      ul li a {
+        font-size: 5px;
+        color: gray;
+        text-decoration: none;
+        padding: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 0px;
       }
     </style>
   </head>
@@ -124,10 +168,22 @@
     <div class="container">
       <div class="top-nav">
         <ul>
-          <li><span style="font-size:10px">Gmail</span></li>
-          <li><span style="font-size:10px">이미지</span></li>
-          <li id="nine-square"></li>
-          <li id="circle-bell"></li>
+          <li><span style="font-size:1px">Gmail</span></li>
+          <li><span style="font-size:1px">이미지</span></li>
+          <li>
+            <img
+              src="../assets/ninesquare.png"
+              style="width: 10px;"
+              alt="nine-square"
+            />
+          </li>
+          <li>
+            <img
+              src="data:image/png;base64,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"
+              style="width: 14px;border-radius: 80%"
+              alt="my name"
+            />
+          </li>
         </ul>
       </div>
       <div class="logo">
@@ -151,6 +207,26 @@
             <input class="btn1" type="button" value="I'm Feeling Lucky" />
           </div>
         </div>
+      </div>
+      <div class="footer">
+        <div style="border-bottom:1px solid #e4e4e4">
+          <a href="#" style="font-size: 7px; color:gray; text-decoration: none; margin-left: 10px;"
+            >대한민국</a
+          >
+        </div>
+        <div style="border-bottom:1px solid #e4e4e4"></div>
+        <div style="border-bottom:1px solid #e4e4e4"></div>
+        <ul class="lowLeftFooter">
+          <li class="a"><a href="#">광고</a></li>
+          <li class="a"><a href="#">비즈니스</a></li>
+          <li class="a"><a href="#">Google 정보</a></li>
+        </ul>
+        <div></div>
+        <ul class="lowRightFooter">
+          <li class="a"><a href="#">개인정보처리방침</a></li>
+          <li class="a"><a href="#">약관</a></li>
+          <li class="a"><a href="#">설정</a></li>
+        </ul>
       </div>
     </div>
   </body>
