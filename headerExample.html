@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      .jbTitle {
+        text-align: center;
+        
+      }
+      .jbTitle .header{
+          font-size: 30px;
+      }
+      .jbMenu {
+        display: none;
+        text-align: center;
+        background-color: yellow;
+        padding: 10px 0px;
+        width: 100%;
+      }
+      .jbContent {
+        height: 2000px;
+      }
+      .jbFixed {
+        /* display: block; */
+        position: fixed;
+        top: 0px;
+        background-color: gray;
+        text-align: center;
+        
+        padding: 10px 0px;
+        width: 100%;
+      }
+
+
+      /* header값으로 타이틀을 넣고 hedaer의 세로 값 이상으로 스크롤이 내려가면 fix되는 제이쿼리 실행한다 */
+    </style>
+    <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+      $( document ).ready( function() {
+        var jbOffset = $( '.jbMenu' ).offset();
+        $( window ).scroll( function() {
+          if ( $( document ).scrollTop() > 500 ) {
+            $( '.jbMenu' ).css("display","block").addClass( 'jbFixed' );
+            
+            // $( '.jbMenu' ).css("display","block");
+          }
+          else {
+            $( '.jbMenu' ).css("display","none").removeClass( 'jbFixed' );
+            // $( '.jbMenu' ).css("display","none");
+          }
+        });
+      } );
+    </script>
+  </head>
+  <body>
+    <div class="jbTitle">
+      <div class="header">
+          ThinkFul    / courses ...
+      </div>
+        <h1>Site Title</h1>
+
+    </div>
+    <div class="jbMenu">
+      <p>
+        First Menu
+        Second Menu
+        Third Menu
+        Fourth Menu
+      </p>
+    </div>
+    <div class="jbContent">
+    </div>
+  </body>
+</html>
