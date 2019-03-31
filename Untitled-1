@@ -1,0 +1,44 @@
+<div>
+        <div style="width:100%; display: inline-block ">
+          <div>
+            <span style="font-weight:350;font-size: 50px; letter-spacing: 5px; position: relative;" >1-on-1, &nbspfrom<br>day&nbsp one.<br></span>
+  
+            <span style="font-weight:400; word-spacing: 1px; line-height: 25px; position: relative; bottom: -20px;">
+              We believe there’s great power in community and<br />
+              mentorship, especially when it comes to changing<br />
+              careers. Your personal mentor isn’t just supervising from<br />
+              the sidelines, they’re working with you face-to-face,<br />
+              every day. They’re just as invested in your success as<br />
+              you are. They’ll help you get further
+              faster by tailoring<br />
+              your curriculum to suit your schedule and specific job<br />
+              goals. 1-on-1 mentorship is hands-down a faster, more<br />
+              effective way to learn.<br></span
+            >
+            <span style="font-weight:400; letter-spacing: 1px;  border: 1px solid black; padding: 10px 20px 10px 20px; position: relative; top: 50px;">LEARN MORE</span>
+          </div>
+          <div>
+            <div>
+              <img
+                src="https://tf-shoebill-prod.imgix.net/img/rich.e9cba8f.jpg?auto=format&auto=compress&w=500"
+                alt=""
+                style="display: inline-block; box-shadow: 5px 5px; width: 360px; position: relative;"
+              />
+              <span style="display: block; text-align: start; font-size:13px; font-weight: 400;letter-spacing: 1.5px;word-spacing: 2px; position: relative; top:20px; left: 300px;">
+                Rich Greenhill<br />
+                Instructor: Engineering Immersion
+              </spam>
+            </div>
+            <div>
+              <img
+                src="https://tf-shoebill-prod.imgix.net/img/shavonn.6a03f52.jpg?auto=format&auto=compress&w=500"
+                alt=""
+                style="display: inline-block;box-shadow: 5px 5px; width: 240px; position: relative; bottom: 340px; left: 230px;"
+              />
+              <span style="display: block; text-align: start; font-size: 13px; font-weight: 400;letter-spacing: 1.5px;word-spacing: 2px; position: relative; bottom: 330px; left: 600px;">
+                Shavonn Brown<br />
+                Mentor: Full Stack Flex
+              </span>
+            </div> 
+          </div>
+        </div>
